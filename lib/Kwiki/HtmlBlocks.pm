@@ -1,11 +1,8 @@
 package Kwiki::HtmlBlocks;
-use strict;
-use warnings;
-use Kwiki::Plugin '-Base';
-our $VERSION = '0.10';
+use Kwiki::Plugin -Base;
+our $VERSION = '0.11';
 
 const class_id => 'html_blocks';
-const class_title => 'Html Blocks';
 
 sub register {
     my $registry = shift;
@@ -19,7 +16,6 @@ sub to_html {
     $self->block_text;
 }
 
-1;
 __DATA__
 
 =head1 NAME 
